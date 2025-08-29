@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const activities = await response.json();
       
       // Add debug logging
-      console.log('Received activities:', activities);
+      // console.log('Received activities:', activities);
 
       // Clear loading message
       activitiesList.innerHTML = "";
@@ -19,8 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
       // Populate activities list
       Object.entries(activities).forEach(([name, details]) => {
         // Add debug logging for each activity
-        console.log(`Activity ${name}:`, details);
-        console.log('Participants:', details.participants);
+        // console.log(`Activity ${name}:`, details);
+        // console.log('Participants:', details.participants);
 
         const activityCard = document.createElement("div");
         activityCard.className = "activity-card";
